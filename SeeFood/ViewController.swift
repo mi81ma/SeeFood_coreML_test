@@ -59,10 +59,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
 
             if let firstResult = results.first {
-                if firstResult.identifier.contains("hotdog") {
-                    self.navigationItem.title = "Hotdog!"
+                if firstResult.identifier.contains("cat") {
+                    self.navigationItem.title = "Cat!"
                 } else {
-                    self.navigationItem.title = "Not Hotdog!"
+                    self.navigationItem.title = "Not Cat!"
                 }
             }
         }
@@ -83,7 +83,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
 //        imagePicker.sourceType = .photoLibrary
         imagePicker.sourceType = .camera
-        
+
         imagePicker.allowsEditing = false
 
         present(imagePicker, animated: true, completion: nil)
